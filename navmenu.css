@@ -1,0 +1,126 @@
+*, *:before, *:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none; /*removes underline in links*/
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background: #1e212f;
+    padding: 15px 50px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a {
+    font-size: 30px;
+    font-weight: bold;
+    color: #cfab8d;
+}
+
+.logo a:hover {
+    color: #ffffff;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+
+ul li a{
+    color: #a0a0a0;
+    font-size: 20px;
+    margin-right: 25px;
+    letter-spacing: 0.5px;
+    padding: 0.10px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+ul li a::after {
+    content: "";
+    position: absolute;
+    background-color: #ff3c78;
+    height: 5px;
+    width: 0;
+    left: 0;
+    bottom: -26px;
+    transition: width 0.3s ease;
+}
+
+ul li a:hover {
+    color: #ffffff;
+}
+
+ul li a:hover:after {
+    width: 100%;
+}
+
+ul li a.active {
+    color: #ffffff;
+}
+
+ul li a.active::after {
+    width:100%;
+}
+
+button a {
+    color: #bfbfbf;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+button {
+    background-color: #2e0a0a;
+    margin-left: 25px;
+    padding: 10px;
+    width: 120px;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    position: relative;
+    display: inline-flex; /*to make it behave as inline item and also lets the text be centered*/
+    justify-content: center;
+    align-items: center;
+}
+
+button::after{
+    content: '';
+    position: absolute;
+    height: 107%;
+    width: 103%;
+    border-radius: 12px;
+    background-image: linear-gradient(to bottom right, #ff4b4b, #ff3c78);
+    z-index: -1;
+}
+
+button:hover {
+    z-index: 0;
+    box-shadow: 0 0 40px #ff3c78; /*horizontal (offset-x), vertical (offset-y), blur-radius, color*/
+    /*option 2
+    box-shadow: 0 0 20px #2e8a3a, 0 0 40px #ff3c78, 0 0 60px #2a1978; --layered shadows
+    option 3
+    box-shadow: 20 10px 60px #2e8a3a, -20 -10px 60px #ff3c78; --separate sides glow
+    */
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;  /* stack items vertically */
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .navbar {
+    padding: 15px 20px;
+  }
+}

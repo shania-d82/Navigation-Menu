@@ -1,0 +1,118 @@
+section, .container {
+    /*section has default margins and paddings*/
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.home {
+    background: linear-gradient(135deg, #2e0a0a, #3d1a40);
+    /*2e0a0a - code of color. put cc at the end for ~80% transparency. --2e0a0acc*/
+    color: #fff;
+    padding-bottom: 40px;
+}
+
+.about {
+    background: #f4f4f4;
+    color: #333;
+    padding-bottom: 40px;
+    width: 100%;
+}
+
+h1.title {
+    margin-top: 30px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 100px;
+    letter-spacing: 12px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    /*the whole settings for that particular font*/
+    font-family: "Bitcount Prop Single Ink", system-ui;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0,
+        "CRSV" 0.5,
+        "ELSH" 0,
+        "ELXP" 0,
+        "SZP1" 0,
+        "SZP2" 0,
+        "XPN1" 0,
+        "XPN2" 0,
+        "YPN1" 0,
+        "YPN2" 0;
+    
+    font-size: 80px;
+    letter-spacing: 6px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: -0.5px;
+    margin-bottom: 10px;
+}
+
+h4 .songtitle {
+    font-weight: 600;
+    color: #ffdd57;
+    text-decoration: none;
+}
+
+h4 .songtitle:hover {
+    color: #ae12d5;
+    text-decoration: underline;
+}
+
+.home p, .about p {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.verses {
+    font-weight: 300;
+    letter-spacing: -0.5px;
+}
+
+.chorus {
+    font-weight: 600;
+    font-style: italic;
+}
+
+.footer {
+    font-size: 10px;
+    font-weight:200;
+    color: #777;
+    text-align: right;
+    font-style: italic;
+    margin-top: 30px;
+    padding-right: 20px;
+}
+
+.contact {
+    background: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding: 25px;
+    gap: 12px;
+}
+
+.container {
+    max-width: 1550px;
+    margin: 0 auto;
+}

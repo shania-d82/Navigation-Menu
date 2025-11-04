@@ -1,0 +1,49 @@
+.container {
+    font-family: 'Poppins', sans-serif;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.all {
+    margin-top: 50px;
+    max-width: 1550px;
+}
+
+h1 {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 100px;
+    letter-spacing: 12px;
+    margin-bottom: 10px;
+
+    font-family: 'Fira Sans', sans-serif;
+    letter-spacing: 5px;
+    margin-bottom: 50px;
+}
+
+.pictures {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.pictures alt {
+    width: 100%;
+    height: 100%;
+}
+
+.footer {
+    font-size: 12px;
+    font-weight:200;
+    color: #777;
+    text-align: right;
+    margin-top: 30px;
+    padding-right: 20px;
+}
